@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dinosaur World</title>
+	<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+	<script type="text/javascript" src="js/myScript.js"></script>
+</head>
+<body>
+	<main>
+		<div class="container">
+			<header style="padding: 0; margin: 0;">
+				<img src="img/logo.jpg">
+			</header>
+
+			<section style="padding: 0 20px 20px 20px;">
+				<p style="text-align: justify;">
+					Dinosaurs ruled the Earth for over 160 million years, from the Triassic period around 230 million years ago through the Jurassic period and until the end of the Cretaceous period around 65 million years ago.
+				</p>
+				<p style="text-align: justify;">
+					The time period from 250 million years ago until around 65 million years ago is known as the Mesozoic Era. It is often referred to as the Age of the Dinosaurs because most dinosaurs developed and became extinct during this time.
+				</p>
+				<p style="text-align: justify;">
+					While dinosaurs came a long time before us humans, fossils and modern technology have helped us piece together what dinosaurs may have looked like and even how they might have behaved. Read on for a wide range of cool dinosaur facts. 
+				</p>
+			</section>
+
+			<section>
+				<img src="img/facts.jpg" 
+				onclick="openAcc()" id="accBtn"
+				onmouseover="this.src = 'img/factsOver.jpg'" 
+				onmouseout="this.src = 'img/facts.jpg'"
+				>
+				<div class="panel" id="acc">
+					<ul>
+						<li>
+							The word dinosaur comes from the Greek language and means 'terrible lizard'. The word was coined by English paleontologist Richard Owen in 1842 and was meant to refer to Dinosaurs impressive size rather than their scary appearance.
+						</li>
+						<li>
+							It is believed that dinosaurs lived on Earth until around 65 million years ago when a mass extinction occurred.
+						</li>
+						<li>
+							Scientists believe that the event leading to the extinction may have been a massive asteroid impact or huge volcanic activity. Events such as these could have blocked out sunlight and significantly changed the Earth's ecology.
+						</li>
+						<li>
+							The first dinosaur to be formally named was the Megalosaurus, back in 1824.
+						</li>
+						<li>
+							A person who studies dinosaurs is known as a paleontologist.
+						</li>
+						<li>
+							Rather than being carnivores (meat eaters), the largest dinosaurs such as the Brachiosaurus and Apatosaurus were actually herbivores (plant eaters).
+						</li>
+						<li>
+							To help fight meat eaters such as the Allosaurus or Spinosaurus, many plant eaters had natural weapons at their disposal. Examples of this include the spikes on the tail of the Stegosaurus and the three horns attached to the front of the Triceratops's head shield.
+						</li>
+						<li>
+							Pterodactyls are not dinosaurs, they were flying reptiles that lived during the age of dinosaurs but by definition they do not fall into the same category. The same goes for water based reptiles such as Plesiosaurs.
+						</li>
+						<li>
+							Birds descended from a type of dinosaurs known as theropods.
+						</li>
+						<li>
+							Despite being long extinct, dinosaurs are frequently featured in the media. One of the more memorable examples of this is Michael Crichton's 1990 book Jurassic Park. Adapted to movie in 1993, the story features cloned dinosaurs brought to life with the help of DNA found in mosquitoes trapped in amber.
+						</li>
+					</ul>
+	 			</div>
+	 		</section> 
+
+	 		<section style="padding: 0 20px 20px 20px; margin-top: 45px;">
+	 			<div>
+	 				<img src="img/fav.png">
+	 			</div>
+
+				<article class="dino">
+					<div class="dinoBar">
+						<h3>Tyrannosaurus Rex </h3>
+					</div>
+					<div class="divImg">
+						<img src="img/trex.png" onmouseover="callSound1()">
+					</div>
+					<div class="divText">
+						Tyrannosaurus rex is possibly the most well known dinosaur due to its huge size, ferocious nature and regular appearances in popular media. Thanks to a number of well preserved fossils, the T-Rex has been studied in detail by paleontologists all around the world.
+					</div>	
+					<div style="width: 100%; float: left;margin-top: 20px;">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/LXGFtUfNpkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+					</div>
+				
+					<!--For the sound to work, we must click somewhere in the browser at least once, get browser in focus-->
+					<audio id="dino1">
+						<source src="sounds/trex.mp3" type="audio/mpeg">
+							No audio support
+					</audio>
+				</article>
+
+				<article class="dino" style="margin-top: 48px;">
+					<div class="dinoBar">
+						<h3>Triceratops </h3>
+					</div>
+					<div class="divImg">
+						<img src="img/tri.png" onmouseover="callSound2()">
+					</div>
+					<div class="divText">
+						The Triceratops is easily recognized thanks to the three horns found on its face as well as its large body and the unique frill around its head. Find out just how big they were, what they ate, why they needed their horns and more interesting information.
+					</div>	
+					<div style="width: 100%; float: left;">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/BmntWBQxesI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+					</div>
+					
+					<!--For the sound to work, we must click somewhere in the browser at least once, get browser in focus-->
+					<audio id="dino2">
+						<source src="sounds/tri.mp3" type="audio/mpeg">
+							No audio support
+					</audio>
+				</article>
+
+				<article class="dino" style="margin-top: 50px;">
+					<img src="img/quiz.png">
+					<p style="text-align: justify; padding: 20px;">
+						Put your knowledge to the test with this fun dinosaur quiz. Answer a range of interesting questions related to everything from the Tyrannosaurus rex to the Diplodocus. How much do you know about dinosaur time periods, which dinosaurs were herbivores and which were carnivores, what they looked like and how many legs they moved on? Give it your best shot, check the answers at the end of the quiz and enjoy learning a range of information and fun trivia about dinosaurs.
+					</p>
+					<p style="text-align: center;padding-bottom: 20px;margin-bottom: 15px;">
+						<a href="quiz.html">CLICK HERE FOR QUIZ</a>
+					</p>
+				</article>
+			</section>
+
+			<footer style="text-align: center;margin-top: 95px;width: 100%; float: left;">
+				<small>
+					Video's courtesy: The Dinosaur Club<br/>
+					Text courtesy: https://www.sciencekids.co.nz
+				</small>
+			</footer>
+
+		</div> <!-- end of main div -->
+	</main>
+</body>
+</html>

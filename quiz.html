@@ -1,0 +1,366 @@
+<!-- Dinosaur World - quiz.html - with CSS and little JavaScript -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+	<script type="text/javascript" src="js/myScript.js"></script>
+
+	<script type="text/javascript">
+		var name = prompt("Enter your name");
+	</script>
+
+</head>
+<body>
+	<main>
+		<div class="container">
+			
+			<header style="padding: 0; margin: 0;">
+				<img src="img/logo.jpg">
+			</header>
+
+			<section style="padding: 20px; text-align: center;">
+
+				<script type="text/javascript">
+					document.write("<h3>Welcome "+name+"</h3>");
+				</script>
+
+				
+				<!--q1 start-->
+				<article class="question" id="q1">
+					<div>
+						<img src="img/q1left.png">
+					</div>
+
+					<div>
+						<p>
+							How many horns did Triceratops have
+						</p>
+						<p>
+							<!--No span needed as only one flex item -->
+							<input type="number" min="1" max="5" id="ques1">
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q1right.png">
+					</div>
+
+					<div id="ans1">
+						The correct answer is: 3
+					</div>
+				</article>
+				<!--q1 end-->
+
+				<!--q2 start-->
+				<article class="question" id="q2">
+					<div>
+						<img src="img/q2left.png">
+					</div>
+
+					<div>
+						<p>
+							What dinosaur themed book was turned into a blockbuster movie in 1993
+						</p>
+						<p>
+							<input type="text" id="ques2">
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q2right.png">
+					</div>
+
+					<div id="ans2">
+						The correct answer is: Jurassic Park
+					</div>
+				</article>
+				<!--q2 end-->
+
+				<!--q3 start-->
+				<article class="question" id="q3">
+					<div>
+						<img src="img/q3left.png">
+					</div>
+
+					<div>
+						<p>
+							The name dinosaur means "terrible lizard"
+						</p>
+						<p>
+							<span><input type="radio" id="ques31" name="r3"> True</span>
+							<span><input type="radio" id="ques32" name="r3"> False</span>
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q3right.png">
+					</div>
+
+					<div id="ans3">
+						The correct answer is: True
+					</div>
+				</article>
+				<!--q3 end-->
+
+				<!--q4 start-->
+				<article class="question" id="q4">
+					<div>
+						<img src="img/q4left.png">
+					</div>
+
+					<div>
+						<p>
+							Which one of these dinosaurs was most like a rhinoceros
+						</p>
+						<p >
+							<select id="ques4">
+								<option value="Saltopus">Saltopus</option>
+								<option value="Stegosaurus">Stegosaurus</option>
+								<option value="Triceratops">Triceratops</option>
+							</select>
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q4right.png">
+					</div>
+
+					<div id="ans4">
+						The correct answer is: Triceratops
+					</div>
+				</article>
+				<!--q4 end-->
+
+				<!--q5 start-->
+				<article class="question" id="q5">
+					<div>
+						<img src="img/q5left.png">
+					</div>
+
+					<div>
+						<p>
+							Dinosaur diet consists of: (Select all applicable options)
+						</p>
+						<p style="margin-top: 0;">
+							<span><input type="checkbox" id="ques51"> Plants</span>
+							<span><input type="checkbox" id="ques52"> Mammoth</span>
+							<span><input type="checkbox" id="ques53"> Rocks</span>
+						</p>
+						<p style="margin-top: 20px;">
+							<span><input type="checkbox" id="ques54"> Animals</span>
+							<span><input type="checkbox" id="ques55"> Humans</span>
+							<span><input type="checkbox" id="ques56"> Unknown</span>
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q5right.png">
+					</div>
+
+					<div id="ans5">
+						The correct answer is: Plants, Animals, Unknown, Rocks to help with digestion
+					</div>
+				</article>
+				<!--q5 end-->
+
+				<!--q6 start-->
+				<article class="question" id="q6">
+					<div>
+						<img src="img/q6left.png">
+					</div>
+
+					<div>
+						<p>
+							Dinosaur fossils have been found on every continent of Earth
+						</p>
+						<p>
+							<span>
+								<input type="radio" id="ques61" name="r6"> True
+							</span>
+							
+							<span>
+								<input type="radio" id="ques62" name="r6"> False
+							</span>
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q6right.png">
+					</div>
+
+					<div id="ans6">
+						The correct answer is: True
+					</div>
+				</article>
+				<!--q6 end-->
+
+				<!--q7 start-->
+				<article class="question" id="q7">
+					<div>
+						<img src="img/q7left.png">
+					</div>
+
+					<div>
+						<p>
+							Dinosaurs went extinct because of ________ strike
+						</p>
+						<p>
+							<input type="text" id="ques7">
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q7right.png">
+					</div>
+
+					<div id="ans7">
+						The correct answer is: Asteroid
+					</div>
+				</article>
+				<!--q7 end-->
+
+				<!--q8 start-->
+				<article class="question" id="q8">
+					<div>
+						<img src="img/q8left.png">
+					</div>
+
+					<div>
+						<p>
+							Which is the largest Dinosaur, The largest land animal ever found
+						</p>
+						<p>
+							<datalist id="data8">
+								<option value="Antarctosaurus"></option>
+								<option value="Apatosaurus"></option>
+								<option value="Aragosaurus"></option>
+								<option value="Aralosaurus"></option>
+								<option value="Archaeoceratops"></option>
+								<option value="Archaeopteryx"></option>
+								<option value="Archaeornithomimus"></option>
+								<option value="Argentinosaurus"></option>
+								<option value="Arrhinoceratops"></option>
+								<option value="Atlascopcosaurus"></option>
+							</datalist>
+							<input type="text" id="ques8" list="data8">	
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q8right.png">
+					</div>
+
+					<div id="ans8">
+						The correct answer is: Argentinosaurus
+					</div>
+				</article>
+				<!--q8 end-->
+
+
+				<!--q9 start-->
+				<article class="question" id="q9">
+					<div>
+						<img src="img/q9left.png">
+					</div>
+
+					<div>
+						<p>
+							What color were dinosaurs
+						</p>
+						<p>
+							<span>
+								<input type="radio" id="ques91" name="r9"> Grey
+							</span>
+							<span>
+								<input type="radio" id="ques92" name="r9"> Brown
+							</span>
+							<span>
+								<input type="radio" id="ques93" name="r9"> Unknown
+							</span>
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q9right.png">
+					</div>
+
+					<div id="ans9">
+						The correct answer is: Unknown
+					</div>
+				</article>
+				<!--q9 end-->
+
+				<!--q10 start-->
+				<article class="question" id="q10">
+					<div>
+						<img src="img/q10left.png">
+					</div>
+
+					<div>
+						<p>
+							A person who studies fossils and prehistoric life such as dinosaurs is known as a what
+						</p>
+						<p>
+							<select id="ques10">
+								<option value="Anthropologists">Anthropologists</option>
+								<option value="Herpetologists">Herpetologists</option>
+								<option value="Paleontologist">Paleontologist</option>
+								<option value="Mammalogists">Mammalogists</option>
+							</select>
+						</p>
+					</div>
+
+					<div>
+						<img src="img/q10right.png">
+					</div>
+
+					<div id="ans10">
+						The correct answer is: Paleontologist
+					</div>
+				</article>
+				<!--q10 end-->
+
+
+				<article class="question">
+					<div>
+						<!--empty div for spacing-->
+					</div>
+
+					<div>
+						
+						<p>
+							<!--empty div for CSS continuity-->
+						</p>
+						<p>
+							<span class="btn" style="margin-top: 20px;" onclick="score()">
+								Submit
+							</span>
+						
+							<span class="btn" style="margin-top: 20px;" >
+								<a href="index.html">
+									Back
+								</a>
+							</span>
+						</p>
+					</div>
+
+					<div>
+						<!--empty div for spacing-->
+					</div>
+				</article>
+	
+			</section>
+
+			<footer style="text-align: center;margin-top: 95px;width: 100%; float: left;">
+				<small>
+					Video's courtesy: The Dinosaur Club<br/>
+					Text courtesy: https://www.sciencekids.co.nz
+				</small>
+			</footer>
+
+		</div><!--end of main div-->
+	</main>
+</body>
+</html>
